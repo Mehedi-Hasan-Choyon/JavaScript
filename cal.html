@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="Calculator w-50 mx-auto bg-light  p-5">
+
+        <div class="d-flex justify-content-around">
+            <p class="lead">Number</p> <p class="lead">Operator</p> <p class="lead">Number</p>
+        </div>
+        
+        <div class="InputArea d-flex justify-content-around">
+            <input id="num1" type="number">  <input id="operator" type="text">  <input id="num2" type="number">
+        </div>
+
+        <div id="result" class="w-100 text-center mt-3">
+
+        </div>
+
+        <div id="result" class="text-center d-flex justify-content-center">
+            <button class="btn btn-success m-4" onclick="cal()">Calculate</button>
+
+            <button class="btn btn-warning m-4" onclick="remove()">Clear</button>
+        </div>
+
+    </div>
+
+
+    <div class="cat w-50 mx-auto btn-warning text-center">
+        <p class="display-4 my-4">Cat Generator</p>
+        <button class="btn btn-success my-4" onclick="catGenerate()">Generte</button>
+
+        <div class="image d-flex justify-content-around" id="imgCat">
+
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
